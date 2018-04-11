@@ -1,4 +1,4 @@
-<?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+<?php 
 /**
  * This CI library allows you to load a view 
  * together with its header and footer in one

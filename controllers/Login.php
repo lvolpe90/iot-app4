@@ -58,11 +58,11 @@ class Login extends CI_Controller {
                 // controlla l'accesso perché ha ricevuto i dati dal form!
                 $username = trim(strtolower($username));
 
-                if (isset($this->utenti[$username])) {
-                    if ($this->utenti[$username]["password"] == $password) {
-                        $this->role = $this->utenti[$username]["role"];
-                        $this->fullname = $this->utenti[$username]["fullname"];
-                        $this->image = base_url($this->utenti[$username]["image"]);
+                if (isset($utenti[$username])) {
+                    if ($utenti[$username]["password"] == $password) {
+                        $this->role = $utenti[$username]["role"];
+                        $this->fullname = $utenti[$username]["fullname"];
+                        $this->image = base_url($utenti[$username]["image"]);
                     }
                 }
 

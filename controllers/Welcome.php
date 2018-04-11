@@ -10,7 +10,7 @@ class Welcome extends CI_Controller {
 	{
         
         
-        $this->template->page_header = "IoT Inc. - Progetto sensori";
+        $this->template->page_header = 'IoT Inc. - Progetto sensori';
 
         if (! $this->session->login ) {
             $this->template->load('welcome_message');

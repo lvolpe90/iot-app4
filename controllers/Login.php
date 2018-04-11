@@ -11,10 +11,7 @@ class Login extends CI_Controller {
     private $fullname = false;
     
     private $is_logged_in = false;
-    
-    private $utenti = array("admin"=>array("role"=>"Administrator", "password"=>"1234", "fullname"=>"Luigi Volpe",                                                      "image"=>"assets/img/avatar5.png"),
-                           "utente"=>array("role"=>"Utente", "password"=>"1234", "fullname"=>"Ospite", "image"=>"assets/img/avatar3.png"));
-    
+
     private function db() {
 //        $this->load->dbforge();
 //        
@@ -31,6 +28,12 @@ class Login extends CI_Controller {
     }
     
     public function __construct() {
+        
+            
+        $utenti = array("admin"=>array("role"=>"Administrator", "password"=>"1234", "fullname"=>"Luigi Volpe",                                                      "image"=>"assets/img/avatar5.png"),
+                           "utente"=>array("role"=>"Utente", "password"=>"1234", "fullname"=>"Ospite", "image"=>"assets/img/avatar3.png"));
+    
+        
 
         parent::__construct();
         
